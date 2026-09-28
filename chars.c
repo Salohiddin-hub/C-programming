@@ -6,7 +6,7 @@ int main(void)
     int a, b, c, x, y, z;
     int p, q, r;
 
-    // Fix: scanf matches only 2 arguments because %*d suppresses the middle input
+    
     printf("Enter three integer numbers\n");
     scanf("%d %*d %d", &a, &b); 
     printf("%d %d\n\n", a, b);
