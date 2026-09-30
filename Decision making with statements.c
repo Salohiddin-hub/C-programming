@@ -18,22 +18,64 @@
 //     return 0;
 // }
 
+
+
+// #include <stdio.h>
+
+// int main() {
+//     int x;
+    
+//     printf("Enter the number: ");
+//     scanf("%d", &x);
+        
+//     if (x%4 == 0 && x%100 != 0 || x%400 != 0)
+//     {
+//         printf("Leap Year");
+//     }
+//     else
+//     {
+//         printf("Not Leap Year");
+//     }
+    
+//     return 0;
+// }
+
 #include <stdio.h>
 
 int main() {
     int x;
+    int y;
+    int z;
     
-    printf("Enter the number: ");
+    printf("Enter the first number: ");
     scanf("%d", &x);
+    printf("Enter the second number: ");
+    scanf("%d", &y);
+    printf("Enter the third number: ");
+    scanf("%d", &z);
         
-    if (x%4 == 0 && x%100 != 0 || x%400 != 0)
+    if (x>y )
     {
-        printf("Leap Year");
-    }
-    else
+        if (x>z)
+        {
+            printf("The biggest number is: %d", x);
+        }
+        else
+        {
+            printf("The biggest number is: %d", z);
+        }
+    }else
     {
-        printf("Not Leap Year");
+        if(y>z)
+        {
+            printf("The biggest number is: %d", y);
+        }
+        else
+        {
+            printf("The biggest number is: %d", z);
+        }
     }
+    
     
     return 0;
 }
