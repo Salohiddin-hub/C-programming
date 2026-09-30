@@ -1,19 +1,19 @@
-// #include <stdio.h>
+#include <stdio.h>
 
-// int main() {
-//     int x;
+int main() {
+    int x;
     
-//     printf("Enter the number: ");
-//     scanf("%d", &x);
+    printf("Enter the number: ");
+    scanf("%d", &x);
         
-//     if (x%2 == 0)
-//     {
-//         printf("Even");
-//     }
-//     else
-//     {
-//         printf("Odd");
-//     }
+    if (x%3 == 0 && x%5 == 0)
+    {
+        printf("Divisible with 3 and 5");
+    }
+    else
+    {
+        printf("Undivisible with 3 and 5");
+    }
     
-//     return 0;
-// }
+    return 0;
+}
