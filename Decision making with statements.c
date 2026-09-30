@@ -1,3 +1,23 @@
+// #include <stdio.h>
+
+// int main() {
+//     int x;
+    
+//     printf("Enter the number: ");
+//     scanf("%d", &x);
+        
+//     if (x%3 == 0 && x%5 == 0)
+//     {
+//         printf("Divisible with 3 and 5");
+//     }
+//     else
+//     {
+//         printf("Undivisible with 3 and 5");
+//     }
+    
+//     return 0;
+// }
+
 #include <stdio.h>
 
 int main() {
@@ -6,13 +26,13 @@ int main() {
     printf("Enter the number: ");
     scanf("%d", &x);
         
-    if (x%3 == 0 && x%5 == 0)
+    if (x%4 == 0 && x%100 != 0 || x%400 != 0)
     {
-        printf("Divisible with 3 and 5");
+        printf("Leap Year");
     }
     else
     {
-        printf("Undivisible with 3 and 5");
+        printf("Not Leap Year");
     }
     
     return 0;
