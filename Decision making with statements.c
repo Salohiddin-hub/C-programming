@@ -79,3 +79,43 @@ int main() {
     
     return 0;
 }
+
+
+
+
+
+
+
+
+#include <stdio.h>
+
+int main() {
+    int customer_num;
+    float units, amount;
+
+    // Prompt user for input[span_0](start_span)[span_0](end_span)
+    printf("Enter Customer Number: ");
+    scanf("%d", &customer_num);
+
+    printf("Enter Power Consumed (in units): ");
+    scanf("%f", &units);
+
+    // Calculate total amount based on the rate slab[span_1](start_span)[span_1](end_span)
+    if (units <= 200) {
+        amount = units * 0.50;
+    } else if (units <= 400) {
+        amount = 100 + (units - 200) * 0.65;
+    } else if (units <= 600) {
+        amount = 230 + (units - 400) * 0.80;
+    } else {
+        amount = 390 + (units - 600) * 1.00;
+    }
+
+    // Print the results[span_2](start_span)[span_2](end_span)
+    printf("\nCustomer Number : %d\n", customer_num);
+    printf("Units Consumed  : %.2f\n", units);
+    printf("Amount to Pay   : Rs. %.2f\n", amount);
+
+    return 0;
+}
+
