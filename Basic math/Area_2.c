@@ -1,3 +1,5 @@
+// Apoint on the circumference of a circle whose center is (0,0) is  (4,5).
+// Writeaprogramtocomputeperimeterandareaofthecircle.  
 #include <stdio.h>
 #include <math.h>
 int main() {
