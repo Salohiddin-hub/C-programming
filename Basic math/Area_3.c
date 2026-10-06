@@ -1,3 +1,9 @@
+/* 
+ * Area of a triangle is given by the formula:
+ * Area = sqrt(S * (S - a) * (S - b) * (S - c))
+ * Where a, b, and c are sides of the triangle and 2S = a + b + c.
+ * Write a program to compute the area of the triangle given the values of a, b, and c.
+ */
 #include <stdio.h>
 #include <math.h>
 int main() {
