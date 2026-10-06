@@ -1,3 +1,5 @@
+// The line joining the points (2,2) and (5,6) which lie on the circumference of a circle is the diameter of the circle.
+// Writea program to compute the area of the circle.
 #include <stdio.h>
 #include <math.h>
 #define PI 3.14
