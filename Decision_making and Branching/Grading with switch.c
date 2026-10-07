@@ -3,6 +3,8 @@
 int main() 
 {
     int score;
+    start:
+    printf("\nEnter your score: ");
     scanf("%int", &score);
     score=score/10;
     switch(score)
@@ -29,5 +31,5 @@ int main()
         printf("Enter a valid score!");
         break;
     }
-    return 0;
+    goto start;
 }
