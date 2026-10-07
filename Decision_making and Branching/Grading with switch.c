@@ -17,8 +17,16 @@ int main()
     case 7:
         printf("C+");
         break;
+    case 6:
+    case 5:
+    case 4:
+    case 3:
+    case 2:
+    case 1:
+        printf("Enter a valid score!");
+        break;
     default:
-        printf("Fail!");
+        printf("Enter a valid score!");
         break;
     }
     return 0;
