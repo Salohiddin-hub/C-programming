@@ -14,20 +14,20 @@ int main()
     switch(op)
     {
     case '+':
-        result=a+b;
-        printf("Addtion: %d", result);
+        printf("Addtion: %d", a+b);
         break;
     case '-':
-        result=a-b;
-        printf("Subtraction: %d ", result);
+        printf("Subtraction: %d ", a-b);
         break;
     case '*':
-        result=a*b;
-        printf("Multiplication: %d", result);
+        printf("Multiplication: %d", a*b);
         break;
     case '/':
-       result=a/b;
-       printf("Division: %d", result);
+       if (b == 0)
+       {
+           printf("Division by zero is not allowed");
+       }
+        printf("Division: %d", a/b);
        break;
    
     }
