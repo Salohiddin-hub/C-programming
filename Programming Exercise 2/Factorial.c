@@ -8,8 +8,10 @@ int main() {
     scanf("%d", &a);
     for (i=1; a>0; --a)
     {
+        printf("%ld * %d", fact, a);
+        printf("\n");
         fact=fact*a;
     }
-    printf("%ld", fact);
+    printf("Result: %ld", fact);
     return 0;
 }
