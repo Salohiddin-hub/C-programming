@@ -18,7 +18,7 @@ int main(){
             sum[i][j] = A[i][j] + B[i][j];
         }
     }
-    printf("Result of 3x3 Matrix Addition:\n");
+    printf("Result of MatrixA and MatrixB Addition:\n");
     for (int i = 0; i < 3; i++) 
     {
         for (int j = 0; j < 3; j++) 
