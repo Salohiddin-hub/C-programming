@@ -1,30 +1,52 @@
 #include <stdio.h>
-int add(int x, int y);
-int mul(int x, int y);
 
-void main()
+void add();
+void sub(int x, int y);
+int mul();
+int div(int x, int y); 
+
+int main()
 {
-    int res;
-    int MUL;
+    add();
+
+    int x, y, m, d;
+    printf("\nEnter the values of x and y for subtraction: "); 
+    scanf("%d%d", &x, &y);
+    sub(x, y);
+
+    m = mul();
+    printf("\nMultiplication= %d", m); 
+
+    printf("\nEnter the values of x and y for division: "); 
+    scanf("%d%d", &x, &y);
+    d = div(x, y);
+    printf("\nDivision= %d\n", d); 
+
+    return 0;
+}
+
+void add()
+{
     int x, y;
-
-    printf("Enter the values of x and y");
-    scanf("%d%d", &x,&y);
-
-    res=add(x,y);
-    printf("Sum=%d", res);
-
-    MUL=mul(x, y);
-    printf ("Multiplication=%d", MUL);
-
-}
-int add(int x, int y)
-{
-
-    return x+y;
+    printf("Enter the values of x and y for addition: ");
+    scanf("%d%d", &x, &y);
+    printf("\nSum=%d", x + y);
 }
 
-int mul(int x, int y)
+void sub(int x, int y)
 {
-    return x*y;
+    printf("\nSubtraction=%d", x - y);
+}
+
+int mul()
+{
+    int x, y;
+    printf("\nEnter the values of x and y for multiplication: ");
+    scanf("%d%d", &x, &y);
+    return x * y;
+}
+
+int div(int x, int y)
+{
+    return x / y;
 }
