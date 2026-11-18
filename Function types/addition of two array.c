@@ -11,14 +11,14 @@ void User_2(void);
 void Sum(int a[], int b[], int n);
 
 void User_1(void) {
-    printf("Enter the values of array_1 (%d ta son): ", SIZE);
+    printf("Enter the values of array_1 (%d): ", SIZE);
     for (int i = 0; i < SIZE; i++) {
         scanf("%d", &array[i]);
     }
 }
 
 void User_2(void) {
-    printf("Enter the values of array_2 (%d ta son): ", SIZE);
+    printf("Enter the values of array_2 (%d): ", SIZE);
     for (int i = 0; i < SIZE; i++) {
         scanf("%d", &array_2[i]);
     }
