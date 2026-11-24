@@ -8,6 +8,6 @@ int main(){
     for (int i=1; i<=num; i++){
         sum+=i;
     }
-    printf("\nAverage of first %dnumbers: %d", num, sum/num);
+    printf("\nAverage of first %d numbers: %d", num, (float)sum/num);
     return 0;
 }
